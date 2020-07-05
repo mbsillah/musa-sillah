@@ -1,2 +1,1 @@
-# musa-sillah
-My portfolio site!
+My portfolio site! Made with Yarn, Webpack, & React.
