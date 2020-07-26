@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome = () => {
   return (
-    <section id="welcome" className="grid"> 
+    <section id="welcome"> 
       <div className="welcome-text">
         <h2>Musa Sillah</h2>
         <h4>Full Stack Web Developer</h4>

@@ -1,20 +1,65 @@
-body {
+/* variables */
+:root {
+  --primary: red;
+  --secondary: blue;
+}
+
+/* defaults */
+body,
+p,
+ul,
+li,
+a {
   margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* base styles */
+body {
+  background: var(--primary);
+  overflow-x: hidden;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/* fonts */
+h1,
+h3 {
+  font-size: 1.2em;
 }
 
 /* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.nav {
+  margin: 0 20px;
+}
+
+.nav ul {
+  display: none;
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-
 }
 
 /* large tablet & laptops styles */
 @media screen and (min-width: 960px) {
-    
+  body {
+    font-size: 18px;
+  }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-    
+  body {
+    font-size: 20px;
+  }
 }

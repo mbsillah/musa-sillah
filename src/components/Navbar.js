@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="grid">
+    <nav className="nav grid">
       <ul>
         <li>
           <a href="#skills">Skills</a>
