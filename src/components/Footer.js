@@ -15,6 +15,9 @@ const Footer = () => {
           <li>
             <a href="">LinkedIn</a>
           </li>
+          <li>
+            <li>This is an example</li>
+          </li>
         </ul>
       </div>
     </footer>
