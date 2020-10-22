@@ -5,10 +5,10 @@ import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
-const App = () => {
+function App() {
   return (
     <React.Fragment>
-      <Navbar />
+      {/* <Navbar /> */}
       <Welcome />
       <Skills />
       <Portfolio />

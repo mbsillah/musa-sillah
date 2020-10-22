@@ -4,15 +4,18 @@
   --secondary: blue;
 }
 
+html {
+  /* 100% is 16px, if user changes browser font-size than divide your wanted size by 16px. the resulting percentage will be used! */
+  font-size: 150%;
+}
+
 /* defaults */
-body,
-p,
-ul,
-li,
-a {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: inherit;
 }
 
 li {
@@ -23,13 +26,8 @@ li {
 body {
   background: var(--primary);
   overflow-x: hidden;
-  font-family: 'Didact Gothic', sans-serif;
-}
-
-/* fonts */
-h1,
-h3 {
-  font-size: 1.2em;
+  font-family: "Didact Gothic", sans-serif;
+  box-sizing: border-box;
 }
 
 /* mobile styles */
@@ -39,27 +37,102 @@ h3 {
 }
 
 .nav {
-  margin: 0 20px;
+  /* margin: 0 20px; */
+  background-color: rgba(0, 128, 0, 0.8);
 }
 
-.nav ul {
-  display: none;
+#welcome {
+  background-color: rgba(0, 0, 255, 0.2);
+  background-image: url(./assets/pexels-negative-space-160109.jpg);
+  /* filter: blur(8px); */
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
 }
+
+.welcome__text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+}
+
+.welcome__text--primary {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+
+  animation: moveInLeft 1s ease-out;
+}
+
+.welcome__text--sub {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* .nav ul {
+  display: none;
+} */
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  html {
+    font-size: 150%;
+  }
 }
 
 /* large tablet & laptops styles */
 @media screen and (min-width: 960px) {
-  body {
-    font-size: 18px;
+  html {
+    font-size: 150%;
   }
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-  body {
-    font-size: 20px;
+  html {
+    font-size: 100%;
   }
 }
