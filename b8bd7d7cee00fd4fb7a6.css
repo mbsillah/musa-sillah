@@ -1,0 +1,169 @@
+/* variables */
+:root {
+  --primary: red;
+  --secondary: blue;
+}
+
+html {
+  /* 100% is 16px, if user changes browser font-size than divide your wanted size by 16px. the resulting percentage will be used! */
+  font-size: 200%;
+}
+
+/* defaults */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* base styles */
+body {
+  /* background: var(--primary); */
+  overflow-x: hidden;
+  font-family: "Didact Gothic", sans-serif;
+  box-sizing: border-box;
+  /* padding: 1rem; */
+}
+
+/* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.nav {
+  /* margin: 0 20px; */
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
+#welcome {
+  background-color: rgba(0, 0, 255, 0.2);
+  background-image: url(/musa-sillah/fa6dc4d4dbfc5be5857f57954e0f6b0c.jpg);
+  /* filter: blur(8px); */
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+}
+
+.welcome__text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+}
+
+.welcome__text--primary {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+
+  animation: moveInLeft 1s ease-out;
+}
+
+.welcome__text--sub {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+#about {
+  height: 100vh;
+  background: lightskyblue;
+  position: relative;
+  text-align: center;
+}
+
+.about__container {
+  position: absolute;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about__text {
+  font-size: .7rem;
+}
+
+.profile-img {
+  width: 40%;
+}
+
+/* .nav ul {
+  display: none;
+} */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+  html {
+    font-size: 175%;
+  }
+}
+
+/* large tablet & laptops styles */
+@media screen and (min-width: 960px) {
+  /* html {
+    font-size: 150%;
+  } */
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 2rem;
+  }
+
+  #welcome {
+    height: 93.98vh;
+  }
+}
+
