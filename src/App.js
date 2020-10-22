@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
-import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import About from './components/About'
 
 function App() {
   return (
     <React.Fragment>
       {/* <Navbar /> */}
       <Welcome />
-      <Skills />
+      <About />
       <Portfolio />
       <Footer />
     </React.Fragment>

@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
+import Skills from "./Skills";
 
 const Portfolio = () => {
   return (
     <div id="portfolio">
+      <Skills />
       <h3>Portfolio</h3>
       <div className="projects grid">
         <div>Project 1</div>

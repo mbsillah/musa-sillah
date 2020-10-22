@@ -8,6 +8,8 @@ const Welcome = () => {
           <span className="welcome__text--primary">musa sillah</span>
           <span className="welcome__text--sub">web developer</span>
         </h1>
+
+        <a href="#">GET TO KNOW ME</a>
       </div>
     </section>
   );

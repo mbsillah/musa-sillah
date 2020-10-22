@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -14,9 +14,6 @@ const Footer = () => {
           </li>
           <li>
             <a href="">LinkedIn</a>
-          </li>
-          <li>
-            <li>This is an example</li>
           </li>
         </ul>
       </div>
