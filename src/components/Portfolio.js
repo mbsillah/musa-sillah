@@ -1,9 +1,9 @@
 import React from "react";
 import Skills from "./Skills";
 
-const Portfolio = () => {
+const Portfolio = ({ portfolioRef }) => {
   return (
-    <div id="portfolio">
+    <div ref={portfolioRef} id="portfolio">
       <Skills />
       <h3>Portfolio</h3>
       <div className="projects grid">

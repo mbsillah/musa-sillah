@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/build'),
     filename: '[hash].bundle.js',
+    // publicPath: "/musa-sillah/"
   },
   module: {
     rules: [
@@ -16,19 +17,18 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
+          'sass-loader',
         ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader',
-        ],
+        use: ['file-loader'],
       },
     ],
   },
@@ -37,7 +37,7 @@ module.exports = {
       template: './public/index.html',
     }),
     new MiniCssExtractPlugin({
-        filename: '[hash].css',
+      filename: '[hash].css',
     }),
   ],
   devServer: {

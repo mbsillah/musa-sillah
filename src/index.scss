@@ -1,8 +1,13 @@
 /* variables */
-:root {
-  --primary: red;
-  --secondary: blue;
-}
+$color-primary: #7289da;
+$color-primary-light: #b8c4ec;
+$color-primary-dark: #445282;
+
+$color-secondary: #99aab5;
+
+$color-black: #000;
+$color-white: #fff;
+$color-grey-dark: #777;
 
 html {
   /* 100% is 16px, if user changes browser font-size than divide your wanted size by 16px. the resulting percentage will be used! */
@@ -26,9 +31,10 @@ li {
 body {
   /* background: var(--primary); */
   overflow-x: hidden;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   box-sizing: border-box;
   /* padding: 1rem; */
+  background-color: $color-white;
 }
 
 /* mobile styles */
@@ -37,14 +43,21 @@ body {
   grid-template-columns: repeat(8, 1fr);
 }
 
-.nav {
-  /* margin: 0 20px; */
-  background-color: rgba(0, 128, 0, 0.8);
-}
+// .nav {
+//   /* margin: 0 20px; */
+//   background-color: rgba(0, 128, 0, 0.8);
+// }
 
 #welcome {
   background-color: rgba(0, 0, 255, 0.2);
-  background-image: url(./assets/pexels-negative-space-160109.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(114, 137, 218, 0.8),
+      rgba(184, 196, 236, 0.8)
+    ),
+    url(./assets/pexels-negative-space-160109.jpg);
+
+  /* background-image: url(./assets/pexels-negative-space-160109.jpg); */
   /* filter: blur(8px); */
   position: relative;
   height: 100vh;
@@ -52,6 +65,10 @@ body {
   background-position: top;
   color: #fff;
   /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+}
+
+.welcome__container {
+  margin-bottom: 4rem;
 }
 
 .welcome__text {
@@ -114,6 +131,79 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1rem;
+
+    @media screen and (min-width: 1200px) {
+      padding: 1rem 3rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    backface-visibility: hidden;
+    animation: moveInBottom 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
 #about {
   height: 100vh;
   background: lightskyblue;
@@ -131,7 +221,7 @@ body {
 }
 
 .about__text {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .profile-img {
@@ -139,30 +229,30 @@ body {
 }
 
 /* .nav ul {
-  display: none;
-} */
+    display: none;
+  } */
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-  html {
-    font-size: 175%;
-  }
+  //   html {
+  //     font-size: 175%;
+  //   }
 }
 
 /* large tablet & laptops styles */
 @media screen and (min-width: 960px) {
   /* html {
-    font-size: 150%;
-  } */
+      font-size: 150%;
+    } */
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
   body {
-    padding: 2rem;
+    /* padding: 1.5rem; */
   }
 
-  #welcome {
-    height: 93.98vh;
-  }
+  /* #welcome {
+      height: 93.98vh;
+    } */
 }
