@@ -7,13 +7,13 @@ const Footer = () => {
         <p className="copywright">Copywright 2020 Musa Sillah</p>
         <ul className="social">
           <li>
-            <a href="">Github</a>
+            <a href="https://github.com/mbsillah" target="_blank">Github</a>
           </li>
           <li>
-            <a href="">Twitter</a>
+            <a href="https://twitter.com/MusaFGC" target="_blank">Twitter</a>
           </li>
           <li>
-            <a href="">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/mbsillah/" target="_blank">LinkedIn</a>
           </li>
         </ul>
       </div>
