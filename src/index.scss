@@ -230,9 +230,35 @@ body {
   width: 40%;
 }
 
-/* .nav ul {
-    display: none;
-  } */
+.footer {
+  padding: 0.5rem 0 0;
+  background: $color-primary-dark;
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+}
+
+#portfolio {
+  height: 87.5vh;
+  background: lightgoldenrodyellow;
+  position: relative;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.copywright {
+  text-align: center;
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
@@ -252,6 +278,10 @@ body {
 @media screen and (min-width: 1200px) {
   body {
     /* padding: 1.5rem; */
+  }
+
+  .social {
+    margin: 0 19rem;
   }
 
   /* #welcome {

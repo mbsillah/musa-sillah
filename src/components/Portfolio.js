@@ -1,5 +1,5 @@
-import React from "react";
-import Skills from "./Skills";
+import React from 'react';
+import Skills from './Skills';
 
 const Portfolio = ({ portfolioRef }) => {
   return (
