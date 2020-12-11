@@ -1,15 +1,28 @@
 import React from 'react';
-
+import { SiReact, SiNodeDotJs, SiMongodb, SiJavascript } from 'react-icons/si';
 
 const Skills = () => {
   return (
+    
     <div id="skills">
-      <h3>Skills</h3>
+      {/* <h3 className="title">Skills</h3> */}
       <div className="grid">
-        <div><i className="fab fa-react"></i> React</div>
-        <div>Node</div>
-        <div>Skill 3</div>
-        <div>Skill 4</div>
+        <div className="gridItem">
+          <SiJavascript />
+          <div>javascript</div>
+        </div>
+        <div className="gridItem">
+          <SiReact />
+          <div>react</div>
+        </div>
+        <div className="gridItem">
+          <SiNodeDotJs />
+          <div>node</div>
+        </div>
+        <div className="gridItem">
+          <SiMongodb />
+          <div>mongoDB</div>
+        </div>
       </div>
     </div>
   );

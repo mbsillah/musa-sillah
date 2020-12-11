@@ -4,13 +4,15 @@ import Skills from './Skills';
 const Portfolio = ({ portfolioRef }) => {
   return (
     <div ref={portfolioRef} id="portfolio">
-      <Skills />
-      <h3>Portfolio</h3>
-      <div className="projects grid">
-        <div>Project 1</div>
-        <div>Project 2</div>
-        <div>Project 3</div>
-        <div>Project 4</div>
+      <div className="portfolioContainer">
+        <Skills />
+        {/* <h3>Portfolio</h3>
+        <div className="projects grid">
+          <div>Zombie Manager</div>
+          <div>Coming Soon</div>
+          <div>Project 3</div>
+          <div>Project 4</div>
+        </div> */}
       </div>
     </div>
   );
