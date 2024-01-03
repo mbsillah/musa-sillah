@@ -42,7 +42,7 @@ const HeroSection = () => {
             particular curve to the front end with a focus on React, Next.js, &
             Typescript. Always willing learn more!
           </p>
-          <div className="mb-4">
+          <div className="mb-6">
             <Link
               href="mailto:mbsillah92@gmail.com"
               className="inline-block px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
@@ -58,12 +58,12 @@ const HeroSection = () => {
               </span>
             </button>
           </div>
-          <div className="flex flex-row justify-around">
+          <div className="flex flex-row justify-around lg:justify-start">
             <Link href="https://www.linkedin.com/in/mbsillah/">
-              <UilLinkedin size="70" />
+              <UilLinkedin size="50" />
             </Link>
             <Link href="https://github.com/mbsillah">
-              <UilGithub size="70" />
+              <UilGithub size="50" />
             </Link>
           </div>
         </div>
