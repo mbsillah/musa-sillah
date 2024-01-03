@@ -38,9 +38,9 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl">
             I'm a full stack software engineer with experience in tech
-            consulting, automations, and medical technology fields. My skills in
-            particular curve to the front end with a focus on React, Next.js, &
-            Typescript. Always willing learn more!
+            consulting, marketing automations, and medical technology fields. My
+            skills in particular curve to the front end with a focus on React,
+            Next.js, & Typescript. Always willing learn more!
           </p>
           <div className="mb-6">
             <Link
