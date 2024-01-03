@@ -59,10 +59,18 @@ const HeroSection = () => {
             </button>
           </div>
           <div className="flex flex-row justify-around lg:justify-start">
-            <Link href="https://www.linkedin.com/in/mbsillah/">
+            <Link
+              href="https://www.linkedin.com/in/mbsillah/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <UilLinkedin size="50" />
             </Link>
-            <Link href="https://github.com/mbsillah">
+            <Link
+              href="https://github.com/mbsillah"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <UilGithub size="50" />
             </Link>
           </div>
