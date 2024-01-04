@@ -1,4 +1,4 @@
-Live site: [musa-code.dev](musa-code.dev)
+Live site: [musa-code.dev](https://musa-code.dev)
 
 ## Getting Started
 
