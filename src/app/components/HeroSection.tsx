@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 mb-4 lg:mt-0">
           <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
-              src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS7WigJugPtYc5zH09_ZG5t2RRYnBZw3aQP-66xL38Yk_xCIhsYkG19hyxfoNGBHfzsV0HFijGxiKjQTngGwj3Z3fzS4Q=s1600"
+              src="https://imgur.com/a/PnMXEYT"
               alt="hero image"
               className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
               width={300}
