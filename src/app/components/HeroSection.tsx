@@ -7,7 +7,7 @@ import { UilLinkedin, UilGithub } from '@iconscout/react-unicons';
 
 const HeroSection = () => {
   const openFile = () => {
-    window.open('/files/Musa_Resume.pdf');
+    window.open('/files/Musa_Resume_2024.pdf');
   };
 
   return (
